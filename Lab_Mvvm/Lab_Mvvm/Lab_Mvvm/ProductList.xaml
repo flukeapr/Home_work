@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Lab_Mvvm.ViewModels"
+             x:Class="Lab_Mvvm.ProductList">
+
+    <ContentPage.BindingContext>
+        <local:ProductListViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <CollectionView ItemsSource="{Binding Products}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        
+                        <Image Source="{Binding Image}" HeightRequest="100" WidthRequest="100" HorizontalOptions="Start" />
+                        <Label Text="{Binding Title}" FontSize="Medium" />
+                        <Label Text="{Binding Price}" FontSize="Small" TextColor="Red" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

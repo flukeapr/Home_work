@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_xamarin_navigator.Page2"
+             BackgroundColor="AliceBlue">
+    <ContentPage.Content>
+        <StackLayout Padding="5,5,5,5">
+          
+                <Label Text="B6501273" TextColor="Black" FontSize="Large"  Margin="0,5"></Label>
+                <Editor x:Name="text" ></Editor>
+                <Button BackgroundColor="White" Text="GO" Clicked="TxtUrl"></Button>
+                <WebView Source="{Binding Name}" x:Name="Weburl" VerticalOptions="FillAndExpand" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

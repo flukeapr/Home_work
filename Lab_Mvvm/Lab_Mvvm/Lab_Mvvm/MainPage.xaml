@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Lab_Mvvm.ViewModels"
+             x:Class="Lab_Mvvm.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:MainPageViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        
+
+
+        <Image Source="hinata.png" HeightRequest="300" WidthRequest="200"></Image>
+        <Editor Grid.Row="0" Grid.Column="1" Placeholder="Enter you Email" Text="{Binding Email}"></Editor>
+        <Editor Grid.Row="1" Grid.Column="1" Placeholder="Enter you Password"  Text="{Binding Password}"></Editor>
+        <Button Grid.Row="2" Grid.Column="1" BackgroundColor="Violet" Text="Login" FontSize="Large" Command="{Binding LoginCommand}"></Button>
+        <Button Grid.Row="3" Grid.Column="1" BackgroundColor="PaleVioletRed" Text="Clear" FontSize="Large" Command="{Binding ClearCommand}"></Button>
+        <Label Grid.Row="4" Grid.Column="1"  FontSize="Large" HorizontalOptions="Center" Text="{Binding Result}"></Label>
+    </StackLayout>
+
+</ContentPage>

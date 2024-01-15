@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_xamarin_navigator.Page3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="B6501273" TextColor="Black" FontSize="Large"  Margin="0,5"></Label>
+            <ListView x:Name="lstview" ItemsSource="{Binding lstview}" ItemSelected="lst_ItemSelected"></ListView>
+            <Button x:Name="Add" Text="ADD" Clicked="AddList_Clicked"></Button>
+            <Button x:Name="Remove" Text="DELETE" Clicked="DelList_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

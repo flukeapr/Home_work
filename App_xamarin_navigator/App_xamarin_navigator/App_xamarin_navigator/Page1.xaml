@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_xamarin_navigator.Page1">
+
+    
+    
+    <StackLayout >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.ColumnSpan="2" Text="B6501273" TextColor="Black" FontSize="Large"  Margin="0,5"></Label>
+            <Image Grid.Row="1" Grid.ColumnSpan="2" Source="sut.jpg" HeightRequest="150" WidthRequest="150"></Image>
+            <Editor Grid.Row="2" Grid.ColumnSpan="2" Placeholder="Input Value of X"  Text="{Binding x}" ></Editor>
+            <Editor Grid.Row="3" Grid.ColumnSpan="2" Placeholder="Input Value of Y" Text="{Binding y}"></Editor>
+            <Editor Grid.Row="4" Grid.ColumnSpan="2" Placeholder="Input You Name" Text="{Binding name}"></Editor>
+            <Button Grid.Row="5" Grid.Column="0" TextColor="Black" BackgroundColor="Green" Text="SubMit" Command="{Binding SubMitCommand}">
+                <Button.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="5" Grid.Column="1" TextColor="Black" BackgroundColor="Red" Text="Cancel" Command="{Binding CanCelCommand}">
+                <Button.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <StackLayout Grid.Row="6" Grid.ColumnSpan="2">
+                <Label  Text="What's You sex?" TextColor="Black"></Label>
+                <RadioButton Content="Male" IsChecked="{Binding IsMale, Mode=TwoWay}"></RadioButton>
+                <RadioButton Content="Female" IsChecked="{Binding IsFemale, Mode=TwoWay}"></RadioButton>
+            </StackLayout>
+            <StackLayout Grid.Row="7" Grid.ColumnSpan="2" Margin="0,5">
+                <Label   TextColor="Black" FontSize="Small" Text="{Binding result}" ></Label>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>
