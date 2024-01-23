@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLIte_.MainPage" 
+             BackgroundColor="AntiqueWhite" 
+             Title="Registration Page">
+
+    <StackLayout Margin="10">
+        <Entry x:Name="ID" Placeholder="ID"></Entry>
+        <Entry x:Name="FirstName" Placeholder="First Name"></Entry>
+        <Entry x:Name="LastName" Placeholder="Last Name"></Entry>
+        <Entry x:Name="Email" Placeholder="Email"></Entry>
+        <Entry x:Name="Password" Placeholder="Password" IsPassword="True"></Entry>
+        <Entry Placeholder="Confirm Password" IsPassword="True"></Entry>
+        <Label Text="Date of Birth"></Label>
+        <DatePicker x:Name="DOB"></DatePicker>
+        <Label Text="Address"></Label>
+        <Editor x:Name="Address"></Editor>
+
+
+        <StackLayout>
+            <Button Text="Sign Up" Clicked="Sigup_Ckicked"></Button>
+            <Button Text="show" Clicked="Show_Clicked"></Button>
+        </StackLayout>
+        <Label Text="Already have account? Sign In" TextColor="Blue"></Label>
+
+
+
+
+
+    </StackLayout>
+
+</ContentPage>

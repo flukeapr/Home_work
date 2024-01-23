@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLIte_.UpdatePage">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Entry x:Name="ID" Placeholder="ID" Text="{Binding id}"></Entry>
+            <Entry x:Name="FirstName" Placeholder="First Name" Text="{Binding FirstName}"></Entry>
+            <Entry x:Name="LastName" Placeholder="Last Name" Text="{Binding LastName}"></Entry>
+            <Entry x:Name="Email" Placeholder="Email" Text="{Binding Email}"></Entry>
+            <Entry x:Name="Password1" Placeholder="Password" IsPassword="False" Text="{Binding Password}"></Entry>
+            <Entry Placeholder="Confirm Password" IsPassword="False" Text="{Binding Password}" x:Name="Password2"></Entry>
+            <Label Text="Date of Birth"></Label>
+            <DatePicker x:Name="DOB" Date="{Binding Dob}"></DatePicker>
+            <Label Text="Address"></Label>
+            <Editor x:Name="Address" Text="{Binding Address}"></Editor>
+            <Button Text="OK" Clicked="Update_clicked" ></Button>
+            <Button Text="CLEAR" Clicked="Cancel_clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLIte_.Display">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal">
+
+            <ListView x:Name="myListView" HasUnevenRows="True"  ItemSelected="myListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="PowderBlue" Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label x:Name="Myid" Text="{Binding id}" TextColor="Red"></Label>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding FirstName}" TextColor="Blue"></Label>
+                                    <Label Text="{Binding LastName}"  TextColor="Blue"></Label>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label  Text="{Binding Dob}" TextColor="Red"></Label>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Email}" TextColor="Red"></Label>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label  Text="{Binding Password}" TextColor="Red"></Label>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label  Text="{Binding Address}" TextColor="Red"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
