@@ -24,9 +24,9 @@ namespace LabAPI.Controllers
 
         // GET: api/Orders/5
         [ResponseType(typeof(Order))]
-        public IHttpActionResult GetOrder(int id)
+        public IHttpActionResult GetOrder(string username)
         {
-            Order order = db.Orders.Find(id);
+            var order = db.Orders.Where(u => u.Username==username);
             if (order == null)
             {
                 return NotFound();
