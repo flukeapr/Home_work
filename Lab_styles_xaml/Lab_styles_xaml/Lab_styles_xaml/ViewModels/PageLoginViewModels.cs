@@ -7,7 +7,7 @@ using Lab_styles_xaml.Models;
 using Lab_styles_xaml.View;
 using Xamarin.Forms;
 using System.Collections.ObjectModel;
-
+using Lab_styles_xaml.APIs;
 namespace Lab_styles_xaml.ViewModels
 {
     class PageLoginViewModels : INotifyPropertyChanged
@@ -16,7 +16,7 @@ namespace Lab_styles_xaml.ViewModels
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-       
+        APIService aPIService;
 
         public string result;
         public Command LoginCommand { get; }
@@ -39,11 +39,12 @@ namespace Lab_styles_xaml.ViewModels
         {
             loginModels = new LoginModels();
 
+            aPIService = new APIService();
+
             LoginCommand = new Command(async() =>
             {
-                
-
-                if (loginModels.Email == "fluke@gmail.com" && loginModels.Password == "12345")
+                var response = await aPIService.Login(loginModels);
+                if (response)
                 {
                     Result = "Success";
                     await Application.Current.MainPage.Navigation.PushAsync(new View.TabbedPageProduct());
@@ -52,6 +53,8 @@ namespace Lab_styles_xaml.ViewModels
                 {
                     Result = "Fail";
                 }
+
+                
                    
                
                 

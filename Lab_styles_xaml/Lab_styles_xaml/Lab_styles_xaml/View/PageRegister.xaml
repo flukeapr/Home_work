@@ -25,7 +25,7 @@
         <Image Source="naruto.png" HeightRequest="200" WidthRequest="200"></Image>
         <Entry Keyboard="Email" Placeholder="Enter You Email" Grid.Row="1" Grid.ColumnSpan="1" Text="{Binding registerModels.Email}"></Entry>
             <Entry Keyboard="Text" Placeholder="Enter You Password" Grid.Row="2" Grid.ColumnSpan="1" Text="{Binding registerModels.Password}"></Entry>
-            <Entry Keyboard="Text" Placeholder="Pleace You Confirm Password" Grid.Row="3" Grid.ColumnSpan="1" Text="{Binding registerModels.ConfirmPass}"></Entry>
+            <Entry Keyboard="Text" Placeholder="Pleace You Confirm Password" Grid.Row="3" Grid.ColumnSpan="1" Text="{Binding registerModels.ConfirmPassword}"></Entry>
             <Button Text="Register" Command="{Binding RegisterCommand}" BackgroundColor="Yellow" TextColor="Black" FontSize="Medium" CornerRadius="10"></Button>
             <Button Text="Back" Command="{Binding BackCommand}" BackgroundColor="GreenYellow" TextColor="Black" FontSize="Medium" CornerRadius="10"></Button>
             <Label Text="{Binding Result}" HorizontalOptions="Center" FontSize="Large" ></Label>

@@ -9,6 +9,6 @@ namespace Lab_styles_xaml.Models
         public string Email { get; set; }
         public string Password { get; set; }
 
-        public string ConfirmPass { get; set; }
+        public string ConfirmPassword { get; set; }
     }
 }

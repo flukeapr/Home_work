@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Text;
 using Xamarin.Forms;
 using Lab_styles_xaml.Models;
+using Lab_styles_xaml.APIs;
 
 namespace Lab_styles_xaml.ViewModels
 {
@@ -12,6 +13,7 @@ namespace Lab_styles_xaml.ViewModels
         public Command RegisterCommand { get; }
         public Command BackCommand { get; }
 
+        APIService aPIService;
         public RegisterModels registerModels { get; set; }
 
         public string result;
@@ -34,26 +36,26 @@ namespace Lab_styles_xaml.ViewModels
         {
             registerModels = new RegisterModels();
 
-            RegisterCommand = new Command(() => {
+            aPIService = new APIService();
 
-                if(registerModels.Email=="newacc@gmail.com" && registerModels.Password == "12345" && registerModels.ConfirmPass== registerModels.Password)
-                {
+            RegisterCommand = new Command(async () => {
 
-                    Result = "Create New Account Success";
-                }else if (registerModels.ConfirmPass != registerModels.Password)
+
+               var response = await aPIService.Register(registerModels);
+
+                if (response)
                 {
-                    Result = "Pleace Check you Confirm Password";
+                    await Application.Current.MainPage.DisplayAlert("Register", "Register success!!!", "OK");
 
                 }
                 else
                 {
-                    Result = "fail";
+                    await Application.Current.MainPage.DisplayAlert("Register", "faillll!!!", "OK");
                 }
 
-
-                
-
             });
+
+            
 
 
             BackCommand = new Command ( async() => {
