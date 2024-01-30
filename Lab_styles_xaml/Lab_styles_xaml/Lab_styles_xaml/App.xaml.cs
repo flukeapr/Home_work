@@ -10,7 +10,7 @@ namespace Lab_styles_xaml
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new View.PageLogin());
+            MainPage = new NavigationPage(new View.TabbedPageProduct());
         }
 
         protected override void OnStart()
