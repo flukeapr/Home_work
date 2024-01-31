@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="PIZZA">
+  <Parameters>
+    <Parameter id="0" name="Pizza_pan" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="1" name="Pizza_crispy_thin" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="3" name="Pizza_extreme_cheese" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="4" name="Pizza_extreme_sausage_cheese" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="5" name="Pizza_newyork_pizzamega_9_inches" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="6" name="Pizza_newyork_pizzamega_12_inches" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="7" name="Pizza_size_M" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="8" name="Pizza_size_L" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="9" name="Thousand_island_sauce" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="10" name="Marinara_sauce" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="11" name="Pizza_sauce" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="12" name="Mozzarella_Cheese" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="13" name="Pineapple" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="14" name="Sliced_Bacon" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="15" name="Sliced_Ham" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="16" name="Anchovies" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="17" name="BBQ_Chicken" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="18" name="Bacon_Dice" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="19" name="Capsicum" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="20" name="Crab_Stick" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="21" name="Garlic_Butter_Chicken" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="22" name="Mushrooms" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="23" name="Onions" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="24" name="Pepperoni" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="25" name="Prawn" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="26" name="Red_Green_Chilli" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="27" name="Roasted_Chicken" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="28" name="Seafood_Mix" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="29" name="Smoked_Pork_Sausage" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="30" name="Tomato" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="31" name="Squid" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="32" name="Italian_Sausage" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+        <value>2</value>
+        <value>3</value>
+        <value>4</value>
+        <value>5</value>
+        <value>6</value>
+        <value>7</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="33" name="Right_spicy_grilled_chicken" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="34" name="Right_roasted_spinach_tomato" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="35" name="Right_mighty_meat" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="36" name="Right_4_cheese_bacon" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="37" name="Right_spicy_super_seafood" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="38" name="Right_seafood_deluxe" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="39" name="Right_seafood_cocktail" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="40" name="Right_super_deluxe" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="41" name="Right_chicken_trio" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="42" name="Right_shimp_cocktail" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="43" name="Right_meat_deluxe" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="44" name="Right_ham_crab_stricks" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="45" name="Right_double_pepperoni" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="46" name="Right_double_cheese" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="47" name="Right_freestyle" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints>
+    <Constraint text="(0&lt;=Mozzarella_Cheese+Pineapple+Sliced_Bacon+Sliced_Ham+Anchovies+BBQ_Chicken+Bacon_Dice+Capsicum+Crab_Stick+Garlic_Butter_Chicken+Mushrooms+Onions+Pepperoni+Prawn+Red_Green_Chilli+Roasted_Chicken+Seafood_Mix+Smoked_Pork_Sausage+Tomato+Squid+Italian_Sausage&amp;&amp;Mozzarella_Cheese+Pineapple+Sliced_Bacon+Sliced_Ham+Anchovies+BBQ_Chicken+Bacon_Dice+Capsicum+Crab_Stick+Garlic_Butter_Chicken+Mushrooms+Onions+Pepperoni+Prawn+Red_Green_Chilli+Roasted_Chicken+Seafood_Mix+Smoked_Pork_Sausage+Tomato+Squid+Italian_Sausage&lt;=7)">
+      <Parameters>
+        <Parameter name="Mozzarella_Cheese" />
+        <Parameter name="Pineapple" />
+        <Parameter name="Sliced_Bacon" />
+        <Parameter name="Sliced_Ham" />
+        <Parameter name="Anchovies" />
+        <Parameter name="BBQ_Chicken" />
+        <Parameter name="Bacon_Dice" />
+        <Parameter name="Capsicum" />
+        <Parameter name="Crab_Stick" />
+        <Parameter name="Garlic_Butter_Chicken" />
+        <Parameter name="Mushrooms" />
+        <Parameter name="Onions" />
+        <Parameter name="Pepperoni" />
+        <Parameter name="Prawn" />
+        <Parameter name="Red_Green_Chilli" />
+        <Parameter name="Roasted_Chicken" />
+        <Parameter name="Seafood_Mix" />
+        <Parameter name="Smoked_Pork_Sausage" />
+        <Parameter name="Tomato" />
+        <Parameter name="Squid" />
+        <Parameter name="Italian_Sausage" />
+        <Parameter name="Mozzarella_Cheese" />
+        <Parameter name="Pineapple" />
+        <Parameter name="Sliced_Bacon" />
+        <Parameter name="Sliced_Ham" />
+        <Parameter name="Anchovies" />
+        <Parameter name="BBQ_Chicken" />
+        <Parameter name="Bacon_Dice" />
+        <Parameter name="Capsicum" />
+        <Parameter name="Crab_Stick" />
+        <Parameter name="Garlic_Butter_Chicken" />
+        <Parameter name="Mushrooms" />
+        <Parameter name="Onions" />
+        <Parameter name="Pepperoni" />
+        <Parameter name="Prawn" />
+        <Parameter name="Red_Green_Chilli" />
+        <Parameter name="Roasted_Chicken" />
+        <Parameter name="Seafood_Mix" />
+        <Parameter name="Smoked_Pork_Sausage" />
+        <Parameter name="Tomato" />
+        <Parameter name="Squid" />
+        <Parameter name="Italian_Sausage" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Pizza_pan==true&amp;&amp;Pizza_crispy_thin==false&amp;&amp;Pizza_extreme_cheese==false&amp;&amp;Pizza_extreme_sausage_cheese==false&amp;&amp;Pizza_newyork_pizzamega_9_inches==false&amp;&amp;Pizza_newyork_pizzamega_12_inches==false)||&#xD;&#xA;(Pizza_crispy_thin==true&amp;&amp;Pizza_pan==false&amp;&amp;Pizza_extreme_cheese==false&amp;&amp;Pizza_extreme_sausage_cheese==false&amp;&amp;Pizza_newyork_pizzamega_9_inches==false&amp;&amp;Pizza_newyork_pizzamega_12_inches==false)||&#xD;&#xA;(Pizza_extreme_cheese==true&amp;&amp;Pizza_pan==false&amp;&amp;Pizza_crispy_thin==false&amp;&amp;Pizza_extreme_sausage_cheese==false&amp;&amp;Pizza_newyork_pizzamega_9_inches==false&amp;&amp;Pizza_newyork_pizzamega_12_inches==false)||&#xD;&#xA;(Pizza_extreme_sausage_cheese==true&amp;&amp;Pizza_pan==false&amp;&amp;Pizza_crispy_thin==false&amp;&amp;Pizza_extreme_cheese==false&amp;&amp;Pizza_newyork_pizzamega_9_inches==false&amp;&amp;Pizza_newyork_pizzamega_12_inches==false)||&#xD;&#xA;(Pizza_newyork_pizzamega_9_inches==true&amp;&amp;Pizza_pan==false&amp;&amp;Pizza_crispy_thin==false&amp;&amp;Pizza_extreme_cheese==false&amp;&amp;Pizza_extreme_sausage_cheese==false&amp;&amp;Pizza_newyork_pizzamega_12_inches==false)||&#xD;&#xA;(Pizza_newyork_pizzamega_12_inches==true&amp;&amp;Pizza_pan==false&amp;&amp;Pizza_crispy_thin==false&amp;&amp;Pizza_extreme_cheese==false&amp;&amp;Pizza_extreme_sausage_cheese==false&amp;&amp;Pizza_newyork_pizzamega_9_inches==false)">
+      <Parameters>
+        <Parameter name="Pizza_pan" />
+        <Parameter name="Pizza_crispy_thin" />
+        <Parameter name="Pizza_extreme_cheese" />
+        <Parameter name="Pizza_extreme_sausage_cheese" />
+        <Parameter name="Pizza_newyork_pizzamega_9_inches" />
+        <Parameter name="Pizza_newyork_pizzamega_12_inches" />
+        <Parameter name="Pizza_crispy_thin" />
+        <Parameter name="Pizza_pan" />
+        <Parameter name="Pizza_extreme_cheese" />
+        <Parameter name="Pizza_extreme_sausage_cheese" />
+        <Parameter name="Pizza_newyork_pizzamega_9_inches" />
+        <Parameter name="Pizza_newyork_pizzamega_12_inches" />
+        <Parameter name="Pizza_extreme_cheese" />
+        <Parameter name="Pizza_pan" />
+        <Parameter name="Pizza_crispy_thin" />
+        <Parameter name="Pizza_extreme_sausage_cheese" />
+        <Parameter name="Pizza_newyork_pizzamega_9_inches" />
+        <Parameter name="Pizza_newyork_pizzamega_12_inches" />
+        <Parameter name="Pizza_extreme_sausage_cheese" />
+        <Parameter name="Pizza_pan" />
+        <Parameter name="Pizza_crispy_thin" />
+        <Parameter name="Pizza_extreme_cheese" />
+        <Parameter name="Pizza_newyork_pizzamega_9_inches" />
+        <Parameter name="Pizza_newyork_pizzamega_12_inches" />
+        <Parameter name="Pizza_newyork_pizzamega_9_inches" />
+        <Parameter name="Pizza_pan" />
+        <Parameter name="Pizza_crispy_thin" />
+        <Parameter name="Pizza_extreme_cheese" />
+        <Parameter name="Pizza_extreme_sausage_cheese" />
+        <Parameter name="Pizza_newyork_pizzamega_12_inches" />
+        <Parameter name="Pizza_newyork_pizzamega_12_inches" />
+        <Parameter name="Pizza_pan" />
+        <Parameter name="Pizza_crispy_thin" />
+        <Parameter name="Pizza_extreme_cheese" />
+        <Parameter name="Pizza_extreme_sausage_cheese" />
+        <Parameter name="Pizza_newyork_pizzamega_9_inches" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Pizza_size_M==true&amp;&amp;Pizza_size_L==false)||(Pizza_size_L==true&amp;&amp;Pizza_size_M==false)">
+      <Parameters>
+        <Parameter name="Pizza_size_M" />
+        <Parameter name="Pizza_size_L" />
+        <Parameter name="Pizza_size_L" />
+        <Parameter name="Pizza_size_M" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Thousand_island_sauce==true&amp;&amp;Marinara_sauce==false&amp;&amp;Pizza_sauce==false)||(Thousand_island_sauce==false&amp;&amp;Marinara_sauce==true&amp;&amp;Pizza_sauce==false)||(Thousand_island_sauce==false&amp;&amp;Marinara_sauce==false&amp;&amp;Pizza_sauce==true)">
+      <Parameters>
+        <Parameter name="Thousand_island_sauce" />
+        <Parameter name="Marinara_sauce" />
+        <Parameter name="Pizza_sauce" />
+        <Parameter name="Thousand_island_sauce" />
+        <Parameter name="Marinara_sauce" />
+        <Parameter name="Pizza_sauce" />
+        <Parameter name="Thousand_island_sauce" />
+        <Parameter name="Marinara_sauce" />
+        <Parameter name="Pizza_sauce" />
+      </Parameters>
+    </Constraint>
+  </Constraints>
+</System>
+
